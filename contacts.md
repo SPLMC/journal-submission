@@ -1,5 +1,5 @@
 ---
-permalink: site/contacts.html
+permalink: site/contacts
 layout: default
 ---
 
