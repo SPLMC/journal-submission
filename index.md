@@ -43,7 +43,7 @@ The feature-family-based strategy also demanded less memory than the others in m
 
 Click here for additional information for replicating our experiment.
 
-## [Contacts](/contacts)
+## [Contacts](./contacts)
 
 
 [reana-tool]:     https://github.com/reana/fse16/raw/master/reana/reana.jar
