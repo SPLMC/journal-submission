@@ -1,5 +1,5 @@
 ---
-permalink: contacts
+permalink: /contacts
 layout: default
 ---
 
