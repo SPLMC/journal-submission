@@ -1,5 +1,4 @@
 ---
-permalink: site/spls/tankwar/
 layout:    default
 title:     TankWar System
 ---
