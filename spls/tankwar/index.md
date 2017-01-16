@@ -16,9 +16,5 @@ Click [here][cnfTankWar] to download the feature model in conjunctive normal for
 _Last update: January 15th., 2016._
 
 
-<<<<<<< HEAD
 [fmTankWar]:  {{ site.url }}/assets/fmTankWar.png
-=======
-[fmTankWar]:  /assets/fmTankWar.png
->>>>>>> 56dc085e3375157480894da91ae6b2fcbb8d5ddf
 [cnfTankWar]: /spls/tankwar/CNF_tankwar.txt
