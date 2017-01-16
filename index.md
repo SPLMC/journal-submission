@@ -19,14 +19,14 @@ ReAna is the tool implementing the feature-family-based strategy for the reliabi
 
 In our empirical study we compare the feature-family-based strategy with 4 other evaluation strategies: product-based, family-based, feature-product-based and family-product-based. A command-line configurable version of ReAna tool implementing all these strategies can be downloaded from [here][reana-spl-tool], and its source code is available at [https://github.com/SPLMC/reana-spl/][reana-spl-repo].
 
-| Product lines | Feature Model | Behavioral Models\* | Results |
-|---------------|:-------------:|:-------------------:|:-------:|
-| Email         | click         | click               | click   |
-| MinePump      | click         | click               | click   |
-| BSN           | click         | click               | click   |
-| Lift          | click         | click               | click   |
-| InterCloud    | click         | click               | click   |
-| TankWar       | click         | click               | click   |
+| Product lines |    Feature Model     | Behavioral Models\* | Results |
+|---------------|:--------------------:|:-------------------:|:-------:|
+| Email         | [click][fmemail]     | click               | click   |
+| MinePump      | [click][fmminepump]  | click               | click   |
+| BSN           | [click][fmbsn]       | click               | click   |
+| Lift          | [click][fmlift]      | click               | click   |
+| InterCloud    | [click][fmintercloud]| click               | click   |
+| TankWar       | [click][fmtankwar]   | click               | click   |
 
 \* All behavioral models were created using the [MagicDraw][magicdraw] tool.
 
@@ -51,3 +51,9 @@ Click here for additional information for replicating our experiment.
 [reana-spl-tool]: https://github.com/reana/fse16/raw/master/reana-spl/reana-spl.jar
 [reana-spl-repo]: https://github.com/SPLMC/reana-spl/
 [magicdraw]:      http://www.nomagic.com/products/magicdraw.html
+[fmemail]:        site/spls/email/
+[fmminepump]:     site/spls/minepump/
+[fmbsn]:          site/spls/bsn/
+[fmlift]:         site/spls/lift/
+[fmintercloud]:   site/spls/intercloud/
+[fmtankwar]:      site/spls/tankwar/
