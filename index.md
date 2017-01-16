@@ -61,5 +61,5 @@ Click here for additional information for replicating our experiment.
 [bmlift]:         spls/lift/uml_lift.xml
 [fmintercloud]:   site/spls/intercloud/
 [bmintercloud]:   spls/intercloud/uml_intercloud.xml
-[fmtankwar]:      site/spls/tankwar/
+[fmtankwar]:      spls/tankwar/
 [bmtankwar]:      spls/tankwar/uml_tankwar.xml

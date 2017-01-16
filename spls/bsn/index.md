@@ -5,7 +5,7 @@ title:     Body Sensor Network (BSN-SPL)
 ---
 # BSN - feature model
 
-![bsn-spl feature model](/spls/bsn/fmBsn.png)
+![bsn-spl feature model][fmBSN]
 
 16 features.  
 298 products.
@@ -17,5 +17,5 @@ Click [here][cnfBSN] to download the feature model in conjunctive normal form (C
 _Last update: January 15th., 2016._
 
 
-[fmBSN]:  /spls/bsn/fmBsn.png
-[cnfBSN]: /spls/bsn/CNF_bsn.txt
+[fmBSN]:  /assets/fmBsn.png
+[cnfBSN]: {{ site.url }}/spls/bsn/CNF_bsn.txt
