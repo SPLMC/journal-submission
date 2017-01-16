@@ -1,5 +1,4 @@
 ---
-permalink: site/spls/lift/
 layout:    default
 title:     Lift System
 ---
@@ -17,5 +16,5 @@ Click [here][cnfLift] to download the feature model in conjunctive normal form (
 _Last update: January 15th., 2016._
 
 
-[fmLift]:  /assets/fmLift.png
+[fmLift]:  ../../assets/fmLift.png
 [cnfLift]: /spls/lift/CNF_lift.txt

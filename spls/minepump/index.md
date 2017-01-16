@@ -1,5 +1,4 @@
 ---
-permalink: site/spls/minepump/
 layout:    default
 title:     MinePump System
 ---
@@ -17,5 +16,5 @@ Click [here][cnfMinePump] to download the feature model in conjunctive normal fo
 _Last update: January 15th., 2016._
 
 
-[fmMinePump]:  /assets/fmMinePump.png
+[fmMinePump]:  ../../assets/fmMinePump.png
 [cnfMinePump]: /spls/minepump/CNF_minepump.txt

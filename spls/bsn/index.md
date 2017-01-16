@@ -1,5 +1,4 @@
 ---
-permalink: site/spls/bsn/
 layout:    default
 title:     Body Sensor Network (BSN-SPL)
 ---
@@ -17,5 +16,5 @@ Click [here][cnfBSN] to download the feature model in conjunctive normal form (C
 _Last update: January 15th., 2016._
 
 
-[fmBSN]:  /assets/fmBsn.png
+[fmBSN]:  ../../assets/fmBsn.png
 [cnfBSN]: {{ site.url }}/spls/bsn/CNF_bsn.txt

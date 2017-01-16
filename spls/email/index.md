@@ -1,5 +1,4 @@
 ---
-permalink: site/spls/email/
 layout:    default
 title:     EMail System
 ---
@@ -17,5 +16,5 @@ Click [here][cnfEmail] to download the feature model in conjunctive normal form 
 _Last update: January 15th., 2016._
 
 
-[fmEmail]:  /assets/fmEmail.png
+[fmEmail]:  ../../assets/fmEmail.png
 [cnfEmail]: /spls/email/CNF_email.txt
