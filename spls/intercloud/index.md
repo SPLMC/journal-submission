@@ -16,5 +16,5 @@ Click [here][cnfIntercloud] to download the feature model in conjunctive normal 
 _Last update: January 15th., 2016._
 
 
-[fmIntercloud]:  ../../assets/fmIntercloud.png
+[fmIntercloud]:  ../../assets/fmInterCloud.png
 [cnfIntercloud]: /spls/intercloud/CNF_intercloud.txt
