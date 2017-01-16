@@ -17,4 +17,4 @@ _Last update: January 15th., 2016._
 
 
 [fmMinePump]:  ../../assets/fmMinePump.png
-[cnfMinePump]: /spls/minepump/CNF_minepump.txt
+[cnfMinePump]: CNF_minepump.txt

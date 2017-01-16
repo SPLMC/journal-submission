@@ -17,4 +17,4 @@ _Last update: January 15th., 2016._
 
 
 [fmBSN]:  ../../assets/fmBSN.png
-[cnfBSN]: {{ site.url }}/spls/bsn/CNF_bsn.txt
+[cnfBSN]: CNF_bsn.txt

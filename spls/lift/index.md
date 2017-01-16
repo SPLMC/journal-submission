@@ -17,4 +17,4 @@ _Last update: January 15th., 2016._
 
 
 [fmLift]:  ../../assets/fmLift.png
-[cnfLift]: /spls/lift/CNF_lift.txt
+[cnfLift]: CNF_lift.txt

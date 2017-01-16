@@ -17,4 +17,4 @@ _Last update: January 15th., 2016._
 
 
 [fmEmail]:  ../../assets/fmEmail.png
-[cnfEmail]: /spls/email/CNF_email.txt
+[cnfEmail]: CNF_email.txt

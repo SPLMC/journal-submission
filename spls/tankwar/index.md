@@ -17,4 +17,4 @@ _Last update: January 15th., 2016._
 
 
 [fmTankWar]:  ../../assets/fmTankWar.png
-[cnfTankWar]: /spls/tankwar/CNF_tankwar.txt
+[cnfTankWar]: CNF_tankwar.txt

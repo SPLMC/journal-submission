@@ -17,4 +17,4 @@ _Last update: January 15th., 2016._
 
 
 [fmIntercloud]:  ../../assets/fmInterCloud.png
-[cnfIntercloud]: /spls/intercloud/CNF_intercloud.txt
+[cnfIntercloud]: CNF_intercloud.txt
