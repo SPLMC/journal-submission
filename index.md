@@ -19,14 +19,14 @@ ReAna is the tool implementing the feature-family-based strategy for the reliabi
 
 In our empirical study we compare the feature-family-based strategy with 4 other evaluation strategies: product-based, family-based, feature-product-based and family-product-based. A command-line configurable version of ReAna tool implementing all these strategies can be downloaded from [here][reana-spl-tool], and its source code is available at [https://github.com/SPLMC/reana-spl/][reana-spl-repo].
 
-| Product lines |    Feature Model     | Behavioral Models\* | Results |
-|---------------|:--------------------:|:-------------------:|:-------:|
-| Email         | [click][fmemail]     | click               | click   |
-| MinePump      | [click][fmminepump]  | click               | click   |
-| BSN           | [click][fmbsn]       | click               | click   |
-| Lift          | [click][fmlift]      | click               | click   |
-| InterCloud    | [click][fmintercloud]| click               | click   |
-| TankWar       | [click][fmtankwar]   | click               | click   |
+| Product lines |    Feature Model     |  Behavioral Models\*  | Results |
+|---------------|:--------------------:|:---------------------:|:-------:|
+| Email         | [click][fmemail]     | [click][bmemail]      | click   |
+| MinePump      | [click][fmminepump]  | [click][bmminepump]   | click   |
+| BSN           | [click][fmbsn]       | [click][bmbsn]        | click   |
+| Lift          | [click][fmlift]      | [click][bmlift]       | click   |
+| InterCloud    | [click][fmintercloud]| [click][bmintercloud] | click   |
+| TankWar       | [click][fmtankwar]   | [click][bmtankwar]    | click   |
 
 \* All behavioral models were created using the [MagicDraw][magicdraw] tool.
 
@@ -52,8 +52,14 @@ Click here for additional information for replicating our experiment.
 [reana-spl-repo]: https://github.com/SPLMC/reana-spl/
 [magicdraw]:      http://www.nomagic.com/products/magicdraw.html
 [fmemail]:        site/spls/email/
+[bmemail]:        site/spls/email/uml_email.xml
 [fmminepump]:     site/spls/minepump/
+[bmminepump]:     site/spls/minepump/uml_minepump.xml
 [fmbsn]:          site/spls/bsn/
+[bmbsn]:          site/spls/bsn/uml_bsn.xml
 [fmlift]:         site/spls/lift/
+[bmlift]:         site/spls/lift/uml_lift.xml
 [fmintercloud]:   site/spls/intercloud/
+[bmintercloud]:   site/spls/intercloud/uml_intercloud.xml
 [fmtankwar]:      site/spls/tankwar/
+[bmtankwar]:      site/spls/tankwar/uml_tankwar.xml
