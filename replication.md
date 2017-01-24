@@ -6,10 +6,14 @@ title:  Experiment replication
 For those whom are interested in replicating our experiment, we provide two
 alternative environments containing the ReAna-SPL tool, the artifacts of all
 evaluated software product lines (including its evolutions) and the scripts for
-results analysis. Each alternative and its usage instructions is described
-below.
+results analysis. In the first alternative the environment is packaged into a
+Docker container and its usage instructions can be found by clicking
+[here](#docker_section). In the second alternative, the environment is packaged
+into an linux image suitable to be imported into VirtualBox manager. Its usage
+instructions can be found by clicking [here](#vbox_section).
 
 ---
+<a name="docker_section"></a>
 
 ## Docker's container
 
@@ -176,7 +180,7 @@ docker cp [name]:/reana-evaluation/results.tar.bz .
 _Example_: considering out container example, the command line for copying the
 results to the host machine would be:
 {% highlight shell%}
-docker cp scalabilityAnalysis:/reana-evaluation/results.tar.bz
+docker cp scalabilityAnalysis:/reana-evaluation/results.tar.bz .
 {% endhighlight %}
 
 After the file transfer finishes, the file `results.tar.bz` will be available at
@@ -185,12 +189,66 @@ open and extract the file. The results will for each software product line will
 be available in its own folder. 
 
 ---
-
+<a name="vbox_section"></a>
 ## Linux image
 
+Another alternative for the experiment replication is by using the environment
+image we created for the [VirtualBox][virtual-box], a virtual manager provided
+by Oracle&copy;. For using this alternative it is necessary having a host
+machine with VirtualBox installed and a copy of the environment image.  In case
+it is necessary installing VirtualBox, its binaries for different platforms can
+be downloaded from [here][virtual-box-download]. The installation procedures are
+available [here][virtual-box-installation]. 
+
+Next we present the steps for importing the replication environment into
+VirtualBox and running the experiment script.
+
+1. **Downloading and importing the Linux image into VirtualBox&copy;**
+
+The Linux image containing the replication environment is available at the
+repository created for this paper submission. For downloading the image file,
+please refer to the file named `replicationEnvironment.tar.bz` at [GitHub
+repository][submission-github] or simply click [here][submission-image]. 
+
+After downloading the `replicationEnvironment.tar.bz` file it is necessary
+extract its content using the decompression tool of your preference. The
+extraction's result is a file name `reana-replicationEnvironment.ova`. This file
+is now ready to be imported to VirtualBox Manager tool. 
+
+To import the image choose the `Import appliance` option from the `File` menu,
+as shown below.
+
+![importAppliance](/assets/importAppliance.png)
+
+The path for the `reana-replicationEnvironment.ova` file must
+be provided at the new window, as shown by the figure below.
+
+![appliancePath](/assets/appliancePath.png)
+
+In the next screen, shown by the figure below, VirtualBox will show you the
+characteristics of the virtual machine you are creating. The values for each
+characteristic, in special number of CPUs and memory, must be changed
+considering the hosts machine resources. In our experiments we used 100% of CPUs
+(considering the hyperthreaded cores) and 75% of the memory -- please refer to
+[Table 1](#Table1). Thus, you should consider such resources usage when creating
+your virtual machine so it resemble our experiment environment as much as
+possible.  
+
+![resourcesDefinition](/assets/resourcesDefinition.png)
+
+The next step will be conclude the virtual machine import. When it is finished,
+the virtual machine will be ready to be executed. 
+
+{:start="2"}
+2. **Executing the evaluation script**
 
 
+[docker]:                   https://docker.com/
+[docker-download]:          https://www.docker.com/products/docker
+[reana-docker-repo]:        https://hub.docker.com/r/splmc/reana-spl/
+[virtual-box]:              https://www.virtualbox.org/
+[virtual-box-download]:     https://www.virtualbox.org/wiki/Downloads
+[virtual-box-installation]: https://www.virtualbox.org/manual/ch02.html
+[submission-github]:        https://github.com/andrelanna/sosym-submission
+[submission-image]:         https://link.to.a.file
 
-[docker]:            https://docker.com/
-[docker-download]:   https://www.docker.com/products/docker
-[reana-docker-repo]: https://hub.docker.com/r/splmc/reana-spl/
