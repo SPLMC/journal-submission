@@ -60,7 +60,7 @@ The host's characteristics considered for the experiment replication are the
 number of CPUs and amount of main memory. The command's output shows such values
 according to the following picture.
 
-![Hosts resources]({%site%}/assets/hostResources.png)
+![Hosts resources]({% site %}/assets/hostResources.png)
 
 **Note 1:** in case the host machine contains a hyper-thread processor, you
 can consider the number of available CPUs as the double of the value shown by
