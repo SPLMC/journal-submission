@@ -9,15 +9,36 @@ layout: default
 
 ## Description
 
-Model Checking techniques have been applied to ensure software systems achieve desired quality levels and fulfill functional and non-functional requirements. However, employing these techniques to software product lines is a challenging task, given the exponential blowup of the number of products. Current product line model checking techniques leverage symbolic model checking and variability information to optimize the analysis, but still face limitations that make them costly or even unfeasible for some product lines. We present a feature-family-based strategy to efficiently analyze reliability of product lines. Our approach limits the effort needed to compute the reliability of a product line by dividing its behavioural models into smaller units, which can be model-checked more efficiently. It also computes the reliability for all configurations at once, by means of a suitable variational data structure. The results show our strategy significantly outperformed the others in terms of time and space.
+Model Checking techniques have been applied to ensure software systems achieve
+desired quality levels and fulfill functional and non-functional requirements.
+However, employing these techniques to software product lines is a challenging
+task, given the exponential blowup of the number of products. Current product
+line model checking techniques leverage symbolic model checking and variability
+information to optimize the analysis, but still face limitations that make them
+costly or even unfeasible for some product lines. We present a
+feature-family-based strategy to efficiently analyze reliability of product
+lines. Our approach limits the effort needed to compute the reliability of a
+product line by dividing its behavioural models into smaller units, which can be
+model-checked more efficiently. It also computes the reliability for all
+configurations at once, by means of a suitable variational data structure. The
+results show our strategy significantly outperformed the others in terms of time
+and space.
 
 ## ReAna tool
 
-ReAna is the tool implementing the feature-family-based strategy for the reliability analysis of software product lines. It can be downloaded from [here][reana-tool], and its source code is available at [https://github.com/SPLMC/reana/][reana-repo].
+ReAna is the tool implementing the feature-family-based strategy for the
+reliability analysis of software product lines. It can be downloaded from
+[here][reana-tool], and its source code is available at
+[https://github.com/SPLMC/reana/][reana-repo].
 
 ## ReAna variants
 
-In our empirical study we compare the feature-family-based strategy with 4 other evaluation strategies: product-based, family-based, feature-product-based and family-product-based. A command-line configurable version of ReAna tool implementing all these strategies can be downloaded from [here][reana-spl-tool], and its source code is available at [https://github.com/SPLMC/reana-spl/][reana-spl-repo].
+In our empirical study we compare the feature-family-based strategy with 4 other
+evaluation strategies: product-based, family-based, feature-product-based and
+family-product-based. A command-line configurable version of ReAna tool
+implementing all these strategies can be downloaded from [here][reana-spl-tool],
+and its source code is available at
+[https://github.com/SPLMC/reana-spl/][reana-spl-repo].
 
 | Product lines |    Feature Model     |  Behavioral Models\*  | Results |
 |---------------|:--------------------:|:---------------------:|:-------:|
@@ -34,14 +55,20 @@ In our empirical study we compare the feature-family-based strategy with 4 other
 
 ## Overall results  (already in the paper)
 
-Overall, our experiments show that the feature-family-based strategy is faster, with statistical significance, than all other analysis strategies, as shown by the figure below. 
+Overall, our experiments show that the feature-family-based strategy is faster,
+with statistical significance, than all other analysis strategies, as shown by
+the figure below. 
 
-The feature-family-based strategy also demanded less memory than the others in most cases, as shown by the figure below. The only exceptions were family-based analysis of Email and Lift systems, with feature-family-based strategy consuming near 5% and 4% more memory, respectively (but faster). 
+The feature-family-based strategy also demanded less memory than the others in
+most cases, as shown by the figure below. The only exceptions were family-based
+analysis of Email and Lift systems, with feature-family-based strategy consuming
+near 5% and 4% more memory, respectively (but faster). 
 
 
 ## Experiment replication
 
-Click [here](replication.html) for additional information for replicating our experiment.
+Click [here](replication.html) for additional information for replicating our
+experiment.
 
 ## [Contacts](site/contacts)
 

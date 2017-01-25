@@ -219,13 +219,13 @@ file is now ready to be imported to VirtualBox Manager tool.
 To import the image into VirtualBox, choose the `Import appliance` option from
 the `File` menu, as shown below.
 
-![importAppliance](/assets/importAppliance.png)
+![importAppliance](assets/importAppliance.png)
 
 The path for the `reana-replicationEnvironment.ova` file must be provided at the
 new window, as shown by the figure below. After informing the file path, click
 on "Continue" to proceed.
 
-![appliancePath](/assets/appliancePath.png)
+![appliancePath](assets/appliancePath.png)
 
 In the next screen, represented by the figure below, VirtualBox will show you
 the characteristics of the virtual machine you are creating. The values for each
@@ -236,7 +236,7 @@ considering the hosts machine resources. In our experiments we used 100% of CPUs
 when creating your virtual machine so it resembles our experiment environment as
 much as possible.  
 
-![resourcesDefinition](/assets/resourcesDefinition.png)
+![resourcesDefinition](assets/resourcesDefinition.png)
 
 The next step will be the conclusion of the virtual machine import. When it is
 finished, the virtual machine will be ready to be executed. 
@@ -250,14 +250,14 @@ After importing the environment image into VirtualBox, a new virtual machine
 To start the virtual machine, select it from the list of available virtual
 machines and click at "Start" button. The figure below depicts this step.
 
-![startVM](/assets/startVM.png)
+![startVM](assets/startVM.png)
 
 In the Virtual Machine's desktop there is a folder named `reana-evaluation`, as
 shown by the figure below. It contains all artifacts needed for replicating our
 experiment, so it comprises all the software product line's models, the analysis
 tools and the scripts for the analysis automation. 
 
-![reanaFolder](/assets/reanaFolder.png)
+![reanaFolder](assets/reanaFolder.png)
 
 The file `run_analysis.sh` inside the `reana-evaluation` folder contains the
 script for automating the reliability analysis of the software product lines.
@@ -266,7 +266,7 @@ analysis finish, it groups the results of each software product line and perform
 the statistical tests. The results (graphs and report) will be available at the
 folder `Results`. 
 
-![reanaFolderContent](/assets/reanaFolderContent.png)
+![reanaFolderContent](assets/reanaFolderContent.png)
 
 The default number of analysis iterations for each strategy/software product
 line is `10`. However, such value can be changed by assigning a value for the
