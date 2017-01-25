@@ -193,12 +193,12 @@ be available in its own folder.
 ## Linux image
 
 Another alternative for the experiment replication is by using the environment
-image we created for the [VirtualBox][virtual-box], a virtual manager provided
-by Oracle&copy;. For using this alternative it is necessary having a host
+image we created for [VirtualBox][virtual-box], a virtual machine manager provided
+by Oracle&copy;. To use this alternative it is necessary having a host
 machine with VirtualBox installed and a copy of the environment image.  In case
 it is necessary installing VirtualBox, its binaries for different platforms can
-be downloaded from [here][virtual-box-download]. The installation procedures are
-available [here][virtual-box-installation]. 
+be downloaded from [here][virtual-box-download]. The installation instructions
+are available [here][virtual-box-installation]. 
 
 Next we present the steps for importing the replication environment into
 VirtualBox and running the experiment script.
@@ -206,41 +206,98 @@ VirtualBox and running the experiment script.
 1. **Downloading and importing the Linux image into VirtualBox&copy;**
 
 The Linux image containing the replication environment is available at the
-repository created for this paper submission. For downloading the image file,
+repository created for this paper submission. To download the image file,
 please refer to the file named `replicationEnvironment.tar.bz` at [GitHub
 repository][submission-github] or simply click [here][submission-image]. 
 
 After downloading the `replicationEnvironment.tar.bz` file it is necessary
 extract its content using the decompression tool of your preference. The
-extraction's result is a file name `reana-replicationEnvironment.ova`. This file
-is now ready to be imported to VirtualBox Manager tool. 
+extraction's result is a file named `reana-replicationEnvironment.ova`. This
+file is now ready to be imported to VirtualBox Manager tool. 
 
-To import the image choose the `Import appliance` option from the `File` menu,
-as shown below.
+To import the image into VirtualBox, choose the `Import appliance` option from
+the `File` menu, as shown below.
 
 ![importAppliance](/assets/importAppliance.png)
 
-The path for the `reana-replicationEnvironment.ova` file must
-be provided at the new window, as shown by the figure below.
+The path for the `reana-replicationEnvironment.ova` file must be provided at the
+new window, as shown by the figure below. After informing the file path, click
+on "Continue" to proceed.
 
 ![appliancePath](/assets/appliancePath.png)
 
-In the next screen, shown by the figure below, VirtualBox will show you the
-characteristics of the virtual machine you are creating. The values for each
-characteristic, in special number of CPUs and memory, must be changed
+In the next screen, represented by the figure below, VirtualBox will show you
+the characteristics of the virtual machine you are creating. The values for each
+characteristic, in special the number of CPUs and memory, must be changed
 considering the hosts machine resources. In our experiments we used 100% of CPUs
 (considering the hyperthreaded cores) and 75% of the memory -- please refer to
-[Table 1](#Table1). Thus, you should consider such resources usage when creating
-your virtual machine so it resemble our experiment environment as much as
-possible.  
+[Table 1](#Table1). Thus, you should consider such values for resources usage
+when creating your virtual machine so it resembles our experiment environment as
+much as possible.  
 
 ![resourcesDefinition](/assets/resourcesDefinition.png)
 
-The next step will be conclude the virtual machine import. When it is finished,
-the virtual machine will be ready to be executed. 
+The next step will be the conclusion of the virtual machine import. When it is
+finished, the virtual machine will be ready to be executed. 
+
 
 {:start="2"}
 2. **Executing the evaluation script**
+
+After importing the environment image into VirtualBox, a new virtual machine
+(named according to the value informed at last step) is available to be used.
+To start the virtual machine, select it from the list of available virtual
+machines and click at "Start" button. The figure below depicts this step.
+
+![startVM](/assets/startVM.png)
+
+In the Virtual Machine's desktop there is a folder named `reana-evaluation`, as
+shown by the figure below. It contains all artifacts needed for replicating our
+experiment, so it comprises all the software product line's models, the analysis
+tools and the scripts for the analysis automation. 
+
+![reanaFolder](/assets/reanaFolder.png)
+
+The file `run_analysis.sh` inside the `reana-evaluation` folder contains the
+script for automating the reliability analysis of the software product lines.
+Thus, it role is to trigger the execution of the ReAna-SPL tool and, when all
+analysis finish, it groups the results of each software product line and perform
+the statistical tests. The results (graphs and report) will be available at the
+folder `Results`. 
+
+![reanaFolderContent](/assets/reanaFolderContent.png)
+
+The default number of analysis iterations for each strategy/software product
+line is `10`. However, such value can be changed by assigning a value for the
+parameter `--times`. For executing the automation script, in a terminal of the
+virtual machine you should type the following commands
+
+{% highlight shell %}
+cd ~/Desktop/reana-evaluation
+./run_analysis.sh
+{% endhighlight %}
+
+In case you want to define the number of analysis iterations, you need change
+the last command, by adding the `--times` parameter, as shown below:
+
+{% highlight shell %}
+./run_analysis.sh --times XX
+{% endhighlight %} 
+where `XX` is the number of iterations.
+
+**Note 5:** although the `--times` parameter can assume an arbitrary positive integer
+value, it must must be greater than `8` in order to allow drawing valid
+conclusions from the statistical analysis.
+
+**Note 6:** due the number of software product lines (and its evolutions), the
+analysis strategies and the time required for each combination analysis/software
+product line, it is recommended choosing a reasonable value for `--times`
+parameter so it answers in a practical time.
+
+
+
+
+
 
 
 [docker]:                   https://docker.com/
@@ -251,4 +308,3 @@ the virtual machine will be ready to be executed.
 [virtual-box-installation]: https://www.virtualbox.org/manual/ch02.html
 [submission-github]:        https://github.com/andrelanna/sosym-submission
 [submission-image]:         https://link.to.a.file
-
