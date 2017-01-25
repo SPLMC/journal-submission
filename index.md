@@ -41,7 +41,7 @@ The feature-family-based strategy also demanded less memory than the others in m
 
 ## Experiment replication
 
-Click [here](replication/) for additional information for replicating our experiment.
+Click [here](replication.html) for additional information for replicating our experiment.
 
 ## [Contacts](site/contacts)
 
