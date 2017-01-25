@@ -190,7 +190,9 @@ open and extract the file. The results will for each software product line will
 be available in its own folder. 
 
 ---
+
 <a name="vbox_section"></a>
+
 ## Linux image
 
 Another alternative for the experiment replication is by using the environment
