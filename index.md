@@ -40,14 +40,14 @@ implementing all these strategies can be downloaded from [here][reana-spl-tool],
 and its source code is available at
 [https://github.com/SPLMC/reana-spl/][reana-spl-repo].
 
-| Product lines |    Feature Model     |  Behavioral Models\*  | Results |
-|---------------|:--------------------:|:---------------------:|:-------:|
-| Email         | [click][fmemail]     | [click][bmemail]      | click   |
-| MinePump      | [click][fmminepump]  | [click][bmminepump]   | click   |
-| BSN           | [click][fmbsn]       | [click][bmbsn]        | click   |
-| Lift          | [click][fmlift]      | [click][bmlift]       | click   |
-| InterCloud    | [click][fmintercloud]| [click][bmintercloud] | click   |
-| TankWar       | [click][fmtankwar]   | [click][bmtankwar]    | click   |
+| Product lines |    Feature Model     |  Behavioral Models\*  | Results       |
+|---------------|:--------------------:|:---------------------:|:-------------:|
+| Email         | [click][fmemail]     | [click][bmemail]      | click         |
+| MinePump      | [click][fmminepump]  | [click][bmminepump]   | click         |
+| BSN           | [click][fmbsn]       | [click][bmbsn]        | [click][rsbsn]|
+| Lift          | [click][fmlift]      | [click][bmlift]       | click         |
+| InterCloud    | [click][fmintercloud]| [click][bmintercloud] | click         |
+| TankWar       | [click][fmtankwar]   | [click][bmtankwar]    | click         |
 
 \* All behavioral models were created using the [MagicDraw][magicdraw] tool.
 
@@ -90,3 +90,4 @@ experiment.
 [bmintercloud]:   spls/intercloud/uml_intercloud.xml
 [fmtankwar]:      spls/tankwar/
 [bmtankwar]:      spls/tankwar/uml_tankwar.xml
+[rsbsn]:          spls/bsn/resultsBSN.html
