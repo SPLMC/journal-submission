@@ -1,5 +1,5 @@
 ---
-permalink: /spls/email/resultsEMail.html
+permalink: /spls/email/resultsEmail.html
 title: EMail System results
 layout: default
 ---
