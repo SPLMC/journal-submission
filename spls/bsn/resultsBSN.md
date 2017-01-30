@@ -1,5 +1,5 @@
 ---
-permalink: /spls/bsn/resultsBSN.html
+permalink: spls/bsn/resultsBSN.html
 title: BSN-SPL's results
 layout: default
 ---
@@ -29,12 +29,32 @@ layout: default
 |            Product         |        -- |         -- |          -- |       -- |       -- |       -- |        -- |        -- |   -- |   -- |   --|
 
 
-
 ## Space required
 
 ![analysis_space](/assets/bsn-mean-memory-configurations_ascending-ALL.png)
 
-[analysis_time]: /assets/bsn-mean-analysis_time-configurations_ascending-logarithmic-ALL.png 
-[analysis_space]:/assets/bsn-mean-memory-configurations_ascending-ALL.png
+|       BSN-SPL's evolutions |       0 |       1 |       2 |       3 |       4 |       5 |       6 |       7 |       8 |       9 |
+|Configuration space's order |    10^2 |    10^2 |    10^3 |    10^3 |    10^3 |    10^3 |    10^4 |    10^4 |    10^4 |    10^5 |
+|---------------------------:|--------:|--------:|--------:|--------:|--------:|--------:|--------:|--------:|--------:|--------:|
+|            Feature-family  |  114.05 |  114.30 |  114.52 |  114.56 |  114.83 |  115.37 |  115.32 |  116.97 |  120.09 |  134.23 |
+|            Feature-product |  339.91 |  490.76 |  737.50 | 1716.41 | 2379.06 | 2837.60 | 2843.36 | 2850.78 | 2874.49 | 2923.93 |
+|            Family          |  156.54 |      -- |      -- |      -- |      -- |      -- |      -- |      -- |      -- |      -- |
+|            Family-product  |  493.99 |  841.31 | 1171.71 | 1153.13 | 2189.89 | 3263.80 |      -- |      -- |      -- |      -- |
+|            Product         |  320.43 |  335.18 |  339.40 |  352.72 |  327.95 |  440.60 |  446.75 |      -- |      -- |      -- |
+
+
+
+| BSN-SPL's evolutions       |      10 |      11 |      12 |      13 |      14 |      15 |      16 |      17 |      18 |      19 |      20 |
+|Configuration space's order |    10^5 |    10^5 |    10^6 |    10^6 |    10^6 |    10^6 |    10^7 |    10^7 |    10^7 |    10^8 |    10^8 |
+|---------------------------:|--------:|--------:|--------:|--------:|--------:|--------:|--------:|--------:|--------:|--------:|--------:|
+|            Feature-family  |  148.34 |  186.03 |  348.58 |  588.99 | 1043.94 | 2225.13 | 4640.35 | 7130.79 |      -- |      -- |      -- | 
+|            Feature-product | 3005.12 | 3234.19 | 3821.39 |      -- |      -- |      -- |      -- |      -- |      -- |      -- |      -- | 
+|            Family          |  156.54 |      -- |      -- |      -- |      -- |      -- |      -- |      -- |      -- |      -- |      -- | 
+|            Family-product  |      -- |      -- |      -- |      -- |      -- |      -- |      -- |      -- |      -- |      -- |      -- | 
+|            Product         |      -- |      -- |      -- |      -- |      -- |      -- |      -- |      -- |      -- |      -- |      -- | 
+
+
+
 ---
-*Last update: 25th., january, 2105.*
+*Last update: 25th., january, 2015.*
+
