@@ -40,14 +40,14 @@ implementing all these strategies can be downloaded from [here][reana-spl-tool],
 and its source code is available at
 [https://github.com/SPLMC/reana-spl/][reana-spl-repo].
 
-| Product lines |    Feature Model     |  Behavioral Models\*  | Results          |
-|---------------|:--------------------:|:---------------------:|:----------------:|
-| Email         | [click][fmemail]     | [click][bmemail]      | [click][rsemail] |
-| MinePump      | [click][fmminepump]  | [click][bmminepump]   | click            |
-| BSN           | [click][fmbsn]       | [click][bmbsn]        | [click][rsbsn]   |
-| Lift          | [click][fmlift]      | [click][bmlift]       | click            |
-| InterCloud    | [click][fmintercloud]| [click][bmintercloud] | click            |
-| TankWar       | [click][fmtankwar]   | [click][bmtankwar]    | click            |
+| Product lines |    Feature Model     |  Behavioral Models\*  | Results               |
+|---------------|:--------------------:|:---------------------:|:---------------------:|
+| Email         | [click][fmemail]     | [click][bmemail]      | [click][rsemail]      |
+| MinePump      | [click][fmminepump]  | [click][bmminepump]   | [click][rsminepump]   |
+| BSN           | [click][fmbsn]       | [click][bmbsn]        | [click][rsbsn]        |
+| Lift          | [click][fmlift]      | [click][bmlift]       | [click][rslift]       |
+| InterCloud    | [click][fmintercloud]| [click][bmintercloud] | [click][rsintercloud] |
+| TankWar       | [click][fmtankwar]   | [click][bmtankwar]    | [click][rstankwar]    |
 
 \* All behavioral models were created using the [MagicDraw][magicdraw] tool.
 
@@ -92,3 +92,7 @@ experiment.
 [bmtankwar]:      spls/tankwar/uml_tankwar.xml
 [rsbsn]:          spls/bsn/resultsBSN.html
 [rsemail]:        spls/email/resultsEmail.html
+[rsminepump]:     spls/minepump/resultsMinepump.html
+[rslift]:         spls/lift/resultsLift.html
+[rsintercloud]:   spls/intercloud/resultsIntercloud.html
+[rstankwar]:      spls/tankwar/resultsTankwar.html
