@@ -18,9 +18,9 @@ title: Feature-Family-Based Reliability Analysis of Software Product Lines
 description: > # this means to ignore newlines until "baseurl:"
    This work is being developed in a jointly effort of researchers of the
    following universities
-   <img src="../assets/unb.jpg"><br/>
-   <img src="../assets/unamur.jpg"><br/>
-   <img src="../assets/passau.jpg"><br/>
+   <img src="http://andrelanna.github.io/sosym-submission/assets/unb.jpg"><br/>
+   <img src="http://andrelanna.github.io/sosym-submission/assets/unamur.jpg"><br/>
+   <img src="http://andrelanna.github.io/sosym-submission/assets/passau.jpg"><br/>
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
