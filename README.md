@@ -116,4 +116,4 @@ experiment.
 [rsintercloud]:   spls/intercloud/resultsIntercloud.html
 [rstankwar]:      spls/tankwar/resultsTankwar.html
 
-{{ include analytics.html }}
+{% include analytics.html %}
