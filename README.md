@@ -115,3 +115,5 @@ experiment.
 [rslift]:         spls/lift/resultsLift.html
 [rsintercloud]:   spls/intercloud/resultsIntercloud.html
 [rstankwar]:      spls/tankwar/resultsTankwar.html
+
+{% include assets/analytics.html %}
