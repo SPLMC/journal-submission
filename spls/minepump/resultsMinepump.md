@@ -1,6 +1,6 @@
 ---
 permalink: /spls/minepump/resultsMinepump.html
-title: BSN-SPL's results
+title: Minepump's results
 layout: default
 ---
 # BSN-SPL analysis statistics
