@@ -1,4 +1,4 @@
-# Suplementary material for *<<journal's name>>* submission:
+# Suplementary material for IST submission:
 
 ## Description
 
