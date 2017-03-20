@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Feature-Family-Based Reliability Analysis of Software Product Lines by </title>
+
+    <link rel="stylesheet" href="/journal-submission/assets/css/style.css?v=">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Feature-Family-Based Reliability Analysis of Software Product Lines</h1>
+        <p>This work is being developed in a jointly effort of researchers of the following universities <img src="http://andrelanna.github.io/journal-submission/assets/unb.jpg"><br/> <img src="http://andrelanna.github.io/journal-submission/assets/unamur.jpg"><br/> <img src="http://andrelanna.github.io/journal-submission/assets/passau.jpg"><br/>
+</p>
+
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <p>For those whom are interested in replicating our experiment, we provide two
+alternative environments containing the ReAna-SPL tool, the artifacts of all
+evaluated software product lines (including its evolutions) and the scripts for
+results analysis. In the first alternative the environment is packaged into a
+Docker container and its usage instructions can be found by clicking
+<a href="#docker_section">here</a>. In the second alternative, the environment is packaged
+into an linux image suitable to be imported into VirtualBox manager. Its usage
+instructions can be found by clicking <a href="#vbox_section">here</a>.</p>
+
+<hr />
+<p><a name="docker_section"></a></p>
+
+<h2 id="dockers-container">Docker’s container</h2>
+
+<p>A public <a href="https://docker.com/">Docker</a> repository containing the image of the experiment’s
+environment is available at Docker Hub. It can be accessed directly at the
+following URL: <a href="https://hub.docker.com/r/splmc/reana-spl/">https://hub.docker.com/r/splmc/reana-spl/</a>.</p>
+
+<p>To execute the experiments you must download the environment’s image
+from ReAna’s repository, create a local container (taking the hosting
+machine’s characteristics into account) and execute the evaluation script inside
+the container.  Each step is detailed in the following.</p>
+
+<ol>
+  <li><strong>Downloading the image from Docker Hub:</strong></li>
+</ol>
+
+<p>In order to download the image from Docker Hub, it is necessary having the
+Docker installed and running at the host machine. In case the host machine does
+not have the Docker Platform installed, you should follow the install
+instructions available <a href="https://www.docker.com/products/docker">here</a>.</p>
+
+<p>Once Docker platform is installed and running accordingly, you can download the
+image containing the experiment environment by typing the following instruction
+at a terminal of the host machine:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">docker pull splmc/reana-spl:istSubmission</code></pre></figure>
+
+<p>The image’s size is around 526 MB, so the download may take some time depending
+on your connection speed.</p>
+
+<ol start="2">
+  <li><strong>Creating the container:</strong></li>
+</ol>
+
+<p>Before creating the experiment’s container it is approppriate to know which are
+the host’s resources. Docker platform provides the following command for showing
+such information at a terminal:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">docker info</code></pre></figure>
+
+<p>The host’s characteristics considered for the experiment replication are the
+number of CPUs and amount of main memory. The command’s output shows such values
+according to the following picture.</p>
+
+<p><img src="assets/hostResources.png" alt="Hosts resources" /></p>
+
+<p><strong>Note 1:</strong> in case the host machine contains a hyper-thread processor, you
+can consider the number of available CPUs as the double of the value shown by
+the <code class="highlighter-rouge">docker info</code> command’s output.</p>
+
+<p><strong>Note 2:</strong> the <code class="highlighter-rouge">Total Memory</code> shown must not be entirely used by the experiment
+container, so it does not imposes much pagination during the analysis execution.</p>
+
+<p><a href="#Table1">Table 1</a> shows the environment characteristics where our experiment
+was executed and it comprises both host machine and container’s characteristics.</p>
+
+<p><a name="Table1"></a></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"> </th>
+      <th style="text-align: center">Host machine</th>
+      <th style="text-align: center">Docker container</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><strong>CPU model</strong></td>
+      <td style="text-align: center">Intel i5-4570TE, 2.70 Ghz</td>
+      <td style="text-align: center">—</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>#CPU’s cores</strong></td>
+      <td style="text-align: center">4 (hyperthreaded) cores</td>
+      <td style="text-align: center">4 cores</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>OS</strong></td>
+      <td style="text-align: center">64-bit CentOs Linux 7</td>
+      <td style="text-align: center">Ubuntu 16.04 LTS</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><strong>Main memory (Gb)</strong></td>
+      <td style="text-align: center">8 Gb</td>
+      <td style="text-align: center">6 Gb</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em><strong>Table 1:</strong> specifications of host machine and the experiment container.</em></p>
+
+<p>Our experiment environment used 100% of available CPUs and 75% of the main
+memory. Such values must be taken into account when replicating the experiment,
+so the replication container resembles our experiment environment as much as
+possible. To create the container from an docker image and define how it uses
+the host’s resources you should execute the following instruction at a terminal
+replacing the values between <strong>[</strong> and <strong>]</strong> by the appropriate values.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">docker run -dt 
+           --cpuset-cpus <span class="o">[</span>min-max] 
+           --memory <span class="o">[</span>amount unit] 
+           --name <span class="o">[</span>name] 
+           <span class="o">[</span>image:tag] 
+           /bin/bash</code></pre></figure>
+
+<p><em>Example:</em> for creating a docker container named <code class="highlighter-rouge">scalabilityAnalysis</code> similar
+to the described by <a href="#Table1">Table 1</a>, the instruction for creating it would
+be:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">docker run -dt 
+           --cpuset-cpus 0-3 
+           --memory 6Gb 
+           --name scalabilityAnalysis 
+           reana-spl:istSubmission 
+           /bin/bash</code></pre></figure>
+
+<ol start="3">
+  <li><strong>Running the evaluation script:</strong></li>
+</ol>
+
+<p>Once the experiment container had been created from docker image, the next step
+is to execute the script that triggers the reliability analysis of the software
+product lines. To access the containers’s terminal, execute the following
+instruction from host’s terminal, replacing <code class="highlighter-rouge">[name]</code> by the container’s name you
+provided the previous step:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">docker <span class="nb">exec</span> -ti <span class="o">[</span>name] /bin/bash</code></pre></figure>
+
+<p><em>Example:</em> considering the previous example, the command line for accessing the
+created container would be:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">docker <span class="nb">exec</span> -ti scalabilityAnalysis /bin/bash</code></pre></figure>
+
+<p>The file <code class="highlighter-rouge">run-analysis.sh</code> (inside the experiment’s folder <code class="highlighter-rouge">/reana-evaluation</code>
+the root folder) contains the experiment script for performing the analysis of
+software product lines.  Such script may receive a value for the <code class="highlighter-rouge">--times</code>
+parameter to define how many times each analysis strategy will be executed for
+each evolution of each software product line. In absence of this parameter the
+evaluation script assumes 10 as default number for iterations. The instructions
+for accessing and starting the evaluation script are shown below.</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="ni">root@90c8d1e0e689:/# </span><span class="nc">cd</span><span class="kv"> reana-evaluation/
+</span><span class="ni">root@90c8d1e0e689:/reana-evaluation# </span><span class="nc">./run_analysis.sh</span><span class="kv"> </span></code></pre></figure>
+
+<p><strong>Note 3:</strong> the container will always start a <code class="highlighter-rouge">root</code> session.<br />
+<strong>Note 4:</strong> each created container will receive an <code class="highlighter-rouge">id</code> (in the example above
+the container’s id is <code class="highlighter-rouge">90c8d1e0e689</code>). Such value will be different for the
+container that you will create.</p>
+
+<p>The script will execute all analysis performed for the software product lines
+and their evolutions presented at the paper. As it may take a long time to
+finish it is recommended choosing a reasonable number of iterations for the
+execution of the strategy analysis. In order to execute the statical analysis,
+the number of iterations can not be less than 8.</p>
+
+<ol start="4">
+  <li><strong>Getting the analysis results</strong></li>
+</ol>
+
+<p>As soon as the evaluations of all software product lines finish the statistical
+analysis takes place for summarizing the analysis’ results, applying the
+suitable statistical tests and outputs its results by graphs and a report. Such
+resuts are grouped by software product lines and show how each analysis strategy
+demands time and space as the software product line evolves. All results of
+statistical analysis are packaged at the file <code class="highlighter-rouge">results.tar.bz</code> inside the
+<code class="highlighter-rouge">reana-evaluation</code> folder.</p>
+
+<p>In order to view its content it is necessary copy <code class="highlighter-rouge">results.tar.bz</code> file to the
+host machine and extract its content. The file transfer from the experiment
+container to the host machine is accomplished by the instruction shown below. In
+a host’s terminal type the following instruction, replacing <code class="highlighter-rouge">[name]</code> by the
+container name:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">docker cp <span class="o">[</span>name]:/reana-evaluation/results.tar.bz .</code></pre></figure>
+
+<p><em>Example</em>: considering out container example, the command line for copying the
+results to the host machine would be:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">docker cp scalabilityAnalysis:/reana-evaluation/results.tar.bz .</code></pre></figure>
+
+<p>After the file transfer finishes, the file <code class="highlighter-rouge">results.tar.bz</code> will be available at
+your working directory. With the extracting tool of your preference, you must
+open and extract the file. The results will for each software product line will
+be available in its own folder.</p>
+
+<hr />
+
+<p><a name="vbox_section"></a></p>
+
+<h2 id="linux-image">Linux image</h2>
+
+<p>Another alternative for the experiment replication is by using the environment
+image we created for <a href="https://www.virtualbox.org/">VirtualBox</a>, a virtual machine manager provided
+by Oracle©. To use this alternative it is necessary having a host
+machine with VirtualBox installed and a copy of the environment image.  In case
+it is necessary installing VirtualBox, its binaries for different platforms can
+be downloaded from <a href="https://www.virtualbox.org/wiki/Downloads">here</a>. The installation instructions
+are available <a href="https://www.virtualbox.org/manual/ch02.html">here</a>.</p>
+
+<p>Next we present the steps for importing the replication environment into
+VirtualBox and running the experiment script.</p>
+
+<ol>
+  <li><strong>Downloading and importing the Linux image into VirtualBox©</strong></li>
+</ol>
+
+<p>The Linux image containing the replication environment is available at the
+repository created for this paper submission. To download the image file,
+please refer to the file named <code class="highlighter-rouge">replicationEnvironment.tar.bz</code> at <a href="https://github.com/andrelanna/sosym-submission">GitHub
+repository</a> or simply click <a href="https://link.to.a.file">here</a>.</p>
+
+<p>After downloading the <code class="highlighter-rouge">replicationEnvironment.tar.bz</code> file it is necessary
+extract its content using the decompression tool of your preference. The
+extraction’s result is a file named <code class="highlighter-rouge">reana-replicationEnvironment.ova</code>. This
+file is now ready to be imported to VirtualBox Manager tool.</p>
+
+<p>To import the image into VirtualBox, choose the <code class="highlighter-rouge">Import appliance</code> option from
+the <code class="highlighter-rouge">File</code> menu, as shown below.</p>
+
+<p><img src="assets/importAppliance.png" alt="importAppliance" /></p>
+
+<p>The path for the <code class="highlighter-rouge">reana-replicationEnvironment.ova</code> file must be provided at the
+new window, as shown by the figure below. After informing the file path, click
+on “Continue” to proceed.</p>
+
+<p><img src="assets/appliancePath.png" alt="appliancePath" /></p>
+
+<p>In the next screen, represented by the figure below, VirtualBox will show you
+the characteristics of the virtual machine you are creating. The values for each
+characteristic, in special the number of CPUs and memory, must be changed
+considering the hosts machine resources. In our experiments we used 100% of CPUs
+(considering the hyperthreaded cores) and 75% of the memory – please refer to
+<a href="#Table1">Table 1</a>. Thus, you should consider such values for resources usage
+when creating your virtual machine so it resembles our experiment environment as
+much as possible.</p>
+
+<p><img src="assets/resourcesDefinition.png" alt="resourcesDefinition" /></p>
+
+<p>The next step will be the conclusion of the virtual machine import. When it is
+finished, the virtual machine will be ready to be executed.</p>
+
+<ol start="2">
+  <li><strong>Executing the evaluation script</strong></li>
+</ol>
+
+<p>After importing the environment image into VirtualBox, a new virtual machine
+(named according to the value informed at last step) is available to be used.
+To start the virtual machine, select it from the list of available virtual
+machines and click at “Start” button. The figure below depicts this step.</p>
+
+<p><img src="assets/startVM.png" alt="startVM" /></p>
+
+<p>In the Virtual Machine’s desktop there is a folder named <code class="highlighter-rouge">reana-evaluation</code>, as
+shown by the figure below. It contains all artifacts needed for replicating our
+experiment, so it comprises all the software product line’s models, the analysis
+tools and the scripts for the analysis automation.</p>
+
+<p><img src="assets/reanaFolder.png" alt="reanaFolder" /></p>
+
+<p>The file <code class="highlighter-rouge">run_analysis.sh</code> inside the <code class="highlighter-rouge">reana-evaluation</code> folder contains the
+script for automating the reliability analysis of the software product lines.
+Thus, it role is to trigger the execution of the ReAna-SPL tool and, when all
+analysis finish, it groups the results of each software product line and perform
+the statistical tests. The results (graphs and report) will be available at the
+folder <code class="highlighter-rouge">Results</code>.</p>
+
+<p><img src="assets/reanaFolderContent.png" alt="reanaFolderContent" /></p>
+
+<p>The default number of analysis iterations for each strategy/software product
+line is <code class="highlighter-rouge">10</code>. However, such value can be changed by assigning a value for the
+parameter <code class="highlighter-rouge">--times</code>. For executing the automation script, in a terminal of the
+virtual machine you should type the following commands</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd</span> ~/Desktop/reana-evaluation
+./run_analysis.sh</code></pre></figure>
+
+<p>In case you want to define the number of analysis iterations, you need change
+the last command, by adding the <code class="highlighter-rouge">--times</code> parameter, as shown below:</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">./run_analysis.sh --times XX</code></pre></figure>
+
+<p>where <code class="highlighter-rouge">XX</code> is the number of iterations.</p>
+
+<p><strong>Note 5:</strong> although the <code class="highlighter-rouge">--times</code> parameter can assume an arbitrary positive integer
+value, it must must be greater than <code class="highlighter-rouge">8</code> in order to allow drawing valid
+conclusions from the statistical analysis.</p>
+
+<p><strong>Note 6:</strong> due the number of software product lines (and its evolutions), the
+analysis strategies and the time required for each combination analysis/software
+product line, it is recommended choosing a reasonable value for <code class="highlighter-rouge">--times</code>
+parameter so it answers in a practical time.</p>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91211747-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/journal-submission/assets/js/scale.fix.js"></script>
+
+
+  
+  </body>
+</html>

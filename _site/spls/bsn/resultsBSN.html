@@ -1,0 +1,472 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Feature-Family-Based Reliability Analysis of Software Product Lines by </title>
+
+    <link rel="stylesheet" href="/journal-submission/assets/css/style.css?v=">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Feature-Family-Based Reliability Analysis of Software Product Lines</h1>
+        <p>This work is being developed in a jointly effort of researchers of the following universities <img src="http://andrelanna.github.io/journal-submission/assets/unb.jpg"><br/> <img src="http://andrelanna.github.io/journal-submission/assets/unamur.jpg"><br/> <img src="http://andrelanna.github.io/journal-submission/assets/passau.jpg"><br/>
+</p>
+
+        
+
+        
+
+        
+      </header>
+      <section>
+
+      <h1 id="bsn-spl-analysis-statistics">BSN-SPL analysis statistics</h1>
+
+<h2 id="time-required">Time required</h2>
+
+<p><img src="/journal-submission/assets/bsn-mean-analysis_time-configurations_ascending-logarithmic-ALL.png" alt="analysis_time" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">BSN-SPL’s evolutions</th>
+      <th style="text-align: right">0</th>
+      <th style="text-align: right">1</th>
+      <th style="text-align: right">2</th>
+      <th style="text-align: right">3</th>
+      <th style="text-align: right">4</th>
+      <th style="text-align: right">5</th>
+      <th style="text-align: right">6</th>
+      <th style="text-align: right">7</th>
+      <th style="text-align: right">8</th>
+      <th style="text-align: right">9</th>
+    </tr>
+    <tr>
+      <th style="text-align: right">Configuration space’s order</th>
+      <th style="text-align: right">10^2</th>
+      <th style="text-align: right">10^2</th>
+      <th style="text-align: right">10^3</th>
+      <th style="text-align: right">10^3</th>
+      <th style="text-align: right">10^3</th>
+      <th style="text-align: right">10^3</th>
+      <th style="text-align: right">10^4</th>
+      <th style="text-align: right">10^4</th>
+      <th style="text-align: right">10^4</th>
+      <th style="text-align: right">10^5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">Feature-family</td>
+      <td style="text-align: right"><strong>237.14</strong></td>
+      <td style="text-align: right"><strong>253.65</strong></td>
+      <td style="text-align: right"><strong>273.01</strong></td>
+      <td style="text-align: right"><strong>305.48</strong></td>
+      <td style="text-align: right"><strong>321.69</strong></td>
+      <td style="text-align: right"><strong>377.40</strong></td>
+      <td style="text-align: right"><strong>389.41</strong></td>
+      <td style="text-align: right"><strong>462.66</strong></td>
+      <td style="text-align: right"><strong>651.84</strong></td>
+      <td style="text-align: right"><strong>1032.05</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Feature-product</td>
+      <td style="text-align: right">991.30</td>
+      <td style="text-align: right">1487.19</td>
+      <td style="text-align: right">2404.18</td>
+      <td style="text-align: right">4312.01</td>
+      <td style="text-align: right">7875.91</td>
+      <td style="text-align: right">14788.91</td>
+      <td style="text-align: right">28881.71</td>
+      <td style="text-align: right">57887.92</td>
+      <td style="text-align: right">117630.81</td>
+      <td style="text-align: right">241553.61</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Family</td>
+      <td style="text-align: right">1604.07</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Family-product</td>
+      <td style="text-align: right">3288.70</td>
+      <td style="text-align: right">11543.38</td>
+      <td style="text-align: right">46273.48</td>
+      <td style="text-align: right">187134.89</td>
+      <td style="text-align: right">672512.22</td>
+      <td style="text-align: right">2109118.92</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Product</td>
+      <td style="text-align: right">6696.06</td>
+      <td style="text-align: right">20259.05</td>
+      <td style="text-align: right">43489.98</td>
+      <td style="text-align: right">97280.21</td>
+      <td style="text-align: right">241249.72</td>
+      <td style="text-align: right">519495.92</td>
+      <td style="text-align: right">1217404.53</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">BSN-SPL’s evolutions</th>
+      <th style="text-align: right">10</th>
+      <th style="text-align: right">11</th>
+      <th style="text-align: right">12</th>
+      <th style="text-align: right">13</th>
+      <th style="text-align: right">14</th>
+      <th style="text-align: right">15</th>
+      <th style="text-align: right">16</th>
+      <th style="text-align: right">17</th>
+      <th style="text-align: right">18</th>
+      <th style="text-align: right">19</th>
+      <th style="text-align: right">20</th>
+    </tr>
+    <tr>
+      <th style="text-align: right">Configuration space’s order</th>
+      <th style="text-align: right">10^5</th>
+      <th style="text-align: right">10^5</th>
+      <th style="text-align: right">10^6</th>
+      <th style="text-align: right">10^6</th>
+      <th style="text-align: right">10^6</th>
+      <th style="text-align: right">10^6</th>
+      <th style="text-align: right">10^7</th>
+      <th style="text-align: right">10^7</th>
+      <th style="text-align: right">10^7</th>
+      <th style="text-align: right">10^8</th>
+      <th style="text-align: right">10^8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">Feature-family</td>
+      <td style="text-align: right"><strong>1713.19</strong></td>
+      <td style="text-align: right"><strong>3443.81</strong></td>
+      <td style="text-align: right"><strong>7332.75</strong></td>
+      <td style="text-align: right"><strong>15090.83</strong></td>
+      <td style="text-align: right"><strong>31208.01</strong></td>
+      <td style="text-align: right"><strong>83984.25</strong></td>
+      <td style="text-align: right"><strong>197660.21</strong></td>
+      <td style="text-align: right"><strong>528948.31</strong></td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Feature-product</td>
+      <td style="text-align: right">495594.45</td>
+      <td style="text-align: right">1022294.56</td>
+      <td style="text-align: right">2145986.30</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Family</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Family-product</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Product</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="space-required">Space required</h2>
+
+<p><img src="/journal-submission/assets/bsn-mean-memory-configurations_ascending-ALL.png" alt="analysis_space" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">BSN-SPL’s evolutions</th>
+      <th style="text-align: right">0</th>
+      <th style="text-align: right">1</th>
+      <th style="text-align: right">2</th>
+      <th style="text-align: right">3</th>
+      <th style="text-align: right">4</th>
+      <th style="text-align: right">5</th>
+      <th style="text-align: right">6</th>
+      <th style="text-align: right">7</th>
+      <th style="text-align: right">8</th>
+      <th style="text-align: right">9</th>
+    </tr>
+    <tr>
+      <th style="text-align: right">Configuration space’s order</th>
+      <th style="text-align: right">10^2</th>
+      <th style="text-align: right">10^2</th>
+      <th style="text-align: right">10^3</th>
+      <th style="text-align: right">10^3</th>
+      <th style="text-align: right">10^3</th>
+      <th style="text-align: right">10^3</th>
+      <th style="text-align: right">10^4</th>
+      <th style="text-align: right">10^4</th>
+      <th style="text-align: right">10^4</th>
+      <th style="text-align: right">10^5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">Feature-family</td>
+      <td style="text-align: right"><strong>114.05</strong></td>
+      <td style="text-align: right"><strong>114.30</strong></td>
+      <td style="text-align: right"><strong>114.52</strong></td>
+      <td style="text-align: right"><strong>114.56</strong></td>
+      <td style="text-align: right"><strong>114.83</strong></td>
+      <td style="text-align: right"><strong>115.37</strong></td>
+      <td style="text-align: right"><strong>115.32</strong></td>
+      <td style="text-align: right"><strong>116.97</strong></td>
+      <td style="text-align: right"><strong>120.09</strong></td>
+      <td style="text-align: right"><strong>134.23</strong></td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Feature-product</td>
+      <td style="text-align: right">339.91</td>
+      <td style="text-align: right">490.76</td>
+      <td style="text-align: right">737.50</td>
+      <td style="text-align: right">1716.41</td>
+      <td style="text-align: right">2379.06</td>
+      <td style="text-align: right">2837.60</td>
+      <td style="text-align: right">2843.36</td>
+      <td style="text-align: right">2850.78</td>
+      <td style="text-align: right">2874.49</td>
+      <td style="text-align: right">2923.93</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Family</td>
+      <td style="text-align: right">156.54</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Family-product</td>
+      <td style="text-align: right">493.99</td>
+      <td style="text-align: right">841.31</td>
+      <td style="text-align: right">1171.71</td>
+      <td style="text-align: right">1153.13</td>
+      <td style="text-align: right">2189.89</td>
+      <td style="text-align: right">3263.80</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Product</td>
+      <td style="text-align: right">320.43</td>
+      <td style="text-align: right">335.18</td>
+      <td style="text-align: right">339.40</td>
+      <td style="text-align: right">352.72</td>
+      <td style="text-align: right">327.95</td>
+      <td style="text-align: right">440.60</td>
+      <td style="text-align: right">446.75</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">BSN-SPL’s evolutions</th>
+      <th style="text-align: right">10</th>
+      <th style="text-align: right">11</th>
+      <th style="text-align: right">12</th>
+      <th style="text-align: right">13</th>
+      <th style="text-align: right">14</th>
+      <th style="text-align: right">15</th>
+      <th style="text-align: right">16</th>
+      <th style="text-align: right">17</th>
+      <th style="text-align: right">18</th>
+      <th style="text-align: right">19</th>
+      <th style="text-align: right">20</th>
+    </tr>
+    <tr>
+      <th style="text-align: right">Configuration space’s order</th>
+      <th style="text-align: right">10^5</th>
+      <th style="text-align: right">10^5</th>
+      <th style="text-align: right">10^6</th>
+      <th style="text-align: right">10^6</th>
+      <th style="text-align: right">10^6</th>
+      <th style="text-align: right">10^6</th>
+      <th style="text-align: right">10^7</th>
+      <th style="text-align: right">10^7</th>
+      <th style="text-align: right">10^7</th>
+      <th style="text-align: right">10^8</th>
+      <th style="text-align: right">10^8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">Feature-family</td>
+      <td style="text-align: right"><strong>148.34</strong></td>
+      <td style="text-align: right"><strong>186.03</strong></td>
+      <td style="text-align: right"><strong>348.58</strong></td>
+      <td style="text-align: right"><strong>588.99</strong></td>
+      <td style="text-align: right"><strong>1043.94</strong></td>
+      <td style="text-align: right"><strong>2225.13</strong></td>
+      <td style="text-align: right"><strong>4640.35</strong></td>
+      <td style="text-align: right"><strong>7130.79</strong></td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Feature-product</td>
+      <td style="text-align: right">3005.12</td>
+      <td style="text-align: right">3234.19</td>
+      <td style="text-align: right">3821.39</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Family</td>
+      <td style="text-align: right">156.54</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Family-product</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">Product</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+      <td style="text-align: right">–</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<p><em>Last update: february 1st., 2015.</em></p>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91211747-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+      </section>
+      <footer>
+        
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/journal-submission/assets/js/scale.fix.js"></script>
+
+
+  
+  </body>
+</html>
