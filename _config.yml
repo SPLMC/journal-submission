@@ -18,11 +18,11 @@ title: Feature-Family-Based Reliability Analysis of Software Product Lines
 description: > # this means to ignore newlines until "baseurl:"
    This work is being developed in a jointly effort of researchers of the
    following universities
-   <img src="http://andrelanna.github.io/journal-submission/assets/unb.jpg"><br/>
-   <img src="http://andrelanna.github.io/journal-submission/assets/unamur.jpg"><br/>
-   <img src="http://andrelanna.github.io/journal-submission/assets/passau.jpg"><br/>
+   <img src="http://andrelanna.github.io/scalabilityAnalysis/assets/unb.jpg"><br/>
+   <img src="http://andrelanna.github.io/scalabilityAnalysis/assets/unamur.jpg"><br/>
+   <img src="http://andrelanna.github.io/scalabilityAnalysis/assets/passau.jpg"><br/>
 
-baseurl: "/journal-submission" # #the subpath of your site, e.g. /blog
+baseurl: "/scalabilityAnalysis" # #the subpath of your site, e.g. /blog
 url: "https://andrelanna.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
