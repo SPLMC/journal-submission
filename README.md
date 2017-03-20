@@ -22,7 +22,7 @@ and space.
 ReAna is the tool implementing the feature-family-based strategy for the
 reliability analysis of software product lines. It can be downloaded from
 [here][reana-tool], and its source code is available at
-[https://github.com/SPLMC/reana/][reana-repo].
+[https://github.com/SPLMC/reana-spl/][reana-repo].
 
 ## ReAna variants
 
