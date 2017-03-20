@@ -17,7 +17,8 @@ title: Feature-Family-Based Reliability Analysis of Software Product Lines
 # email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
    This work is being developed in a jointly effort of researchers of the
-   following universities
+   following universities: 
+   
    <img src="http://splmc.github.io/scalabilityAnalysis/assets/unb.jpg"><br/>
    <img src="http://splmc.github.io/scalabilityAnalysis/assets/unamur.jpg"><br/>
    <img src="http://splmc.github.io/scalabilityAnalysis/assets/passau.jpg"><br/>
