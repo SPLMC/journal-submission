@@ -92,8 +92,8 @@ experiment.
 ## [Contacts](site/contacts)
 
 
-[reana-tool]:     https://github.com/SPLMC/scalabilityAnalysis/raw/master/assets/reana.jar
-[reana-repo]:     https://github.com/SPLMC/reana/
+[reana-tool]:     https://github.com/SPLMC/scalabilityAnalysis/raw/master/assets/reana-spl.jar
+[reana-repo]:     https://github.com/SPLMC/reana-spl/
 [reana-spl-tool]: https://github.com/SPLMC/scalabilityAnalysis/raw/master/assets/reana-spl.jar
 [reana-spl-repo]: https://github.com/SPLMC/reana-spl/
 [magicdraw]:      http://www.nomagic.com/products/magicdraw.html
