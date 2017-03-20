@@ -94,7 +94,7 @@ experiment.
 
 [reana-tool]:     https://github.com/reana/fse16/raw/master/reana/reana.jar
 [reana-repo]:     https://github.com/SPLMC/reana/
-[reana-spl-tool]: https://github.com/SPLMC/scalabilityAnalysis/assets/reana-spl.jar
+[reana-spl-tool]: https://github.com/SPLMC/scalabilityAnalysis/raw/master/assets/reana-spl.jar
 [reana-spl-repo]: https://github.com/SPLMC/reana-spl/
 [magicdraw]:      http://www.nomagic.com/products/magicdraw.html
 [fmemail]:        spls/email/
