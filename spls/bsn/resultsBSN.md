@@ -7,7 +7,7 @@ layout: default
 
 ## Time required
 
-![analysis_time]({{site.baseurl}}/assets/bsn-mean-analysis_time-configurations_ascending-logarithmic-ALL.png)
+![analysis_time]({{site.baseurl}}/assets/logbsnTime.png)
 
 |       BSN-SPL's evolutions |       0  |        1  |        2  |         3  |         4  |          5  |          6  |        7  |         8  |         9  | 
 |Configuration space's order |    10^2  |     10^2  |     10^3  |      10^3  |      10^3  |       10^3  |       10^4  |     10^4  |      10^4  |      10^5  |
@@ -31,7 +31,7 @@ layout: default
 
 ## Space required
 
-![analysis_space]({{site.baseurl}}/assets/bsn-mean-memory-configurations_ascending-ALL.png)
+![analysis_space]({{site.baseurl}}/assets/bsnSpace.png)
 
 |       BSN-SPL's evolutions |       0  |       1  |       2  |       3  |       4  |       5  |       6  |       7  |       8  |       9  |
 |Configuration space's order |    10^2  |    10^2  |    10^3  |    10^3  |    10^3  |    10^3  |    10^4  |    10^4  |    10^4  |    10^5  |
@@ -56,7 +56,7 @@ layout: default
 
 
 ---
-*Last update: february 1st., 2015.*
+*Last update: march 21th., 2017.*
 
 
 
