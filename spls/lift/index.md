@@ -4,20 +4,34 @@ title:     Lift System
 ---
 # Lift feature model
 
+## Original feature and behavioral models
+
 ![lift feature model][fmLift]
 
 10 features.  
 512 products.
 
 Click [here][cnfLift] to download the feature model in conjunctive normal form (CNF).
+Click [here][bhvLift] to download the behavioral model.
 
 ---
 
-_Last update: January 15th., 2016._
+## Evolutions of feature and behavioral models of Lift system.
+
+|:-:|:-:|:-:|
+|**Evol.**|**Feature<br>model**|**Behavioral<br>models**|
+
+
+{% for ev in site.data.liftEvolutionsData %}
+| {{ev.evolution}} | <a href="{{ev.fmImage}}">(PNG)</a> <a href="{{ev.cnfFile}}">(CNF)</a> <a href="{{ev.xmlFmFile}}">(XML)</a> | <a href="{{ev.behavioralFile}}">(XML)</a>
+{% endfor %}
+---
+_Last update: March 21th., 2017._
 
 
 [fmLift]:  ../../assets/fmLift.png
 [cnfLift]: CNF_lift.txt
+[bhvLift]: uml_lift.tar.gz
 
 
 

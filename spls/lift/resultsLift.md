@@ -7,7 +7,7 @@ layout: default
 
 ## Time required
 
-![analysis_time]({{site.baseurl}}/assets/lift-mean-analysis_time-configurations_ascending-logarithmic-ALL.png)
+![analysis_time]({{site.baseurl}}/assets/logliftTime.png)
 
 |Configuration space's order   |      10^2 |       10^3 |       10^3 |       10^3 |       10^3 |       10^4 |       10^4 |       10^4 |       10^5 |      10^5 |
 |-----------------------------:|----------:|-----------:|-----------:|-----------:|-----------:|-----------:|-----------:|-----------:|-----------:|----------:|
@@ -29,7 +29,7 @@ layout: default
 
 ## Space required
 
-![analysis_space]({{site.baseurl}}/assets/lift-mean-memory-configurations_ascending-ALL.png)
+![analysis_space]({{site.baseurl}}/assets/liftSpace.png)
 
 
 |  Configuration space's order |     10^2 |     10^3 |     10^3 |     10^3 |      10^3 |      10^4 |      10^4 |      10^4 |      10^5 |      10^5 |
@@ -49,7 +49,7 @@ layout: default
 |              Product         |       -- |       -- |       -- |       -- |        -- |        -- |        -- |        -- |        -- |        -- |      --  | 
 
 ---
-*Last update: February 1st. 2015.*
+*Last update: March 21th., 2015.*
 
 
 
