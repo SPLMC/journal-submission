@@ -43,17 +43,6 @@ deployment and games and their configuration spaces range from from dozen to
 billions of products. The feature and behavioral models of each subject system
 are available at the second and third column of the following table.
 
-{::comment}
-| Product lines |    Feature Model     |  Behavioral Models\*  | Results               |
-|---------------|:--------------------:|:---------------------:|:---------------------:|
-| Email         | [click][fmemail]     | [click][bmemail]      | [click][rsemail]      |
-| MinePump      | [click][fmminepump]  | [click][bmminepump]   | [click][rsminepump]   |
-| BSN           | [click][fmbsn]       | [click][bmbsn]        | [click][rsbsn]        |
-| Lift          | [click][fmlift]      | [click][bmlift]       | [click][rslift]       |
-| InterCloud    | [click][fmintercloud]| [click][bmintercloud] | [click][rsintercloud] |
-| TankWar       | [click][fmtankwar]   | [click][bmtankwar]    | [click][rstankwar]    |
-{comment/:}
-
 | Product lines |    Feature and <br> behavioral models        | Results               |
 |---------------|:--------------------------------------------:|:---------------------:|
 | Email         | [click][fmemail]                             | [click][rsemail]      |
