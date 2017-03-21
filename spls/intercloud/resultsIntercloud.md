@@ -7,7 +7,7 @@ layout: default
 
 ## Time required
 
-![analysis_time]({{site.baseurl}}/assets/intercloud-mean-analysis_time-configurations_ascending-logarithmic-ALL.png)
+![analysis_time]({{site.baseurl}}/assets/logintercloudTime.png)
 
 | Intercloud evolutions      |         0  |          1  |          2  |          3  |         4  |          5  |          6  |          7  |          8  |         9  |
 |Configuration space's order |      10^5  |       10^5  |       10^5  |       10^5  |      10^6  |      10^6   |       10^6  |       10^7  |       10^7  |      10^7  |
@@ -29,7 +29,7 @@ layout: default
 
 ## Space required
 
-![analysis_space]({{site.baseurl}}/assets/intercloud-mean-memory-configurations_ascending-ALL.png)
+![analysis_space]({{site.baseurl}}/assets/intercloudSpace.png)
 
 
 | Intercloud evolutions      |       0  |        1 |       2  |       3  |       4  |       5  |       6  |        7  |        8  |       9  |
@@ -51,7 +51,7 @@ layout: default
 |Product                     |      --  |      --  |      --  |      --  |      --  |      --  |      --  |       --  |       --  |      --  |      --  |
 
 ---
-*Last update: february 1st. 2017.*
+*Last update: march 21th., 2017.*
 
 
 
