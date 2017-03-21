@@ -18,8 +18,9 @@ Click [here][bhvBSN] to download the behavioral model.
 
 ## Evolutions of feature and behavioral models of BSN-SPL.
 
-|:--------------:|:-----------------:|:---------------------:|
-| **Evolutions** | **Feature model** | **Behavioral models** |
+|:-:|:-:|:-:|
+|**Evol.**|**Feature<br>model**|**Behavioral<br>models**|
+
 
 {% for ev in site.data.bsnEvolutionsData %}
 | {{ev.evolution}} | <a href="{{ev.fmImage}}">(PNG)</a> <a href="{{ev.cnfFile}}">(CNF)</a> <a href="{{ev.xmlFmFile}}">(XML)</a> | <a href="{{ev.behavioralFile}}">(XML)</a>
