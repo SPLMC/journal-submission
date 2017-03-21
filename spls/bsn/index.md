@@ -4,20 +4,33 @@ title:     Body Sensor Network (BSN-SPL)
 ---
 # BSN - feature model
 
+## Original feature and behavioral models
+
 ![bsn-spl feature model][fmBSN]
 
 16 features.  
 298 products.
 
 Click [here][cnfBSN] to download the feature model in conjunctive normal form (CNF).
+Click [here][bhvBSN] to download the behavioral model.
 
 ---
 
-_Last update: January 15th., 2016._
+## Evolutions of feature and behavioral models of BSN-SPL.
+
+|:--------------:|:-----------------:|:---------------------:|
+| **Evolutions** | **Feature model** | **Behavioral models** |
+
+{% for ev in site.data.bsnEvolutionsData %}
+| {{ev.evolution}} | <a href="{{ev.fmImage}}">(PNG)</a> <a href="{{ev.cnfFile}}">(CNF)</a> <a href="{{ev.xmlFmFile}}">(XML)</a> | <a href="{{ev.behavioralFile}}">(XML)</a>
+{% endfor %}
+---
+_Last update: March 21th., 2017._
 
 
 [fmBSN]:  ../../assets/fmBSN.png
-[cnfBSN]: CNF_bsn.txt
+[cnfBSN]: CNF_bsn.txt 
+[bhvBSN]: uml_bsn.tar.gz
 
 
 
