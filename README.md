@@ -53,8 +53,6 @@ are available at the second and third column of the following table.
 | TankWar       | [click][fmtankwar]                           | [click][rstankwar]    |
 
 
-{#\* All behavioral models were created using the [MagicDraw][magicdraw] tool.#}
-
 To notice how each evaluation strategy behaves as the software product line
 under analysis increases, the experimental study augmented the subject system's
 complexity by adding an optional feature and its respective behavior (described
