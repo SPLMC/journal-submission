@@ -7,7 +7,7 @@ layout: default
 
 ## Time required
 
-![analysis_time]({{site.baseurl}}/assets/email-mean-analysis_time-configurations_ascending-logarithmic-ALL.png)
+![analysis_time]({{site.baseurl}}/assets/logemailTime.png)
 
 
 
@@ -39,7 +39,7 @@ layout: default
 
 ## Space required
 
-![analysis_space]({{site.baseurl}}/assets/email-mean-memory-configurations_ascending-ALL.png)
+![analysis_space]({{site.baseurl}}/assets/emailSpace.png)
 
 
 
@@ -64,7 +64,7 @@ layout: default
 |Product                      |        --  |         --  |         --  |         --  |        --  |         --  |         --  |         --  |         --  |       --  |      --|
 
 ---
-*Last update: february 1st., 2105.*
+*Last update: March, 21th. 2017.*
 
 
 

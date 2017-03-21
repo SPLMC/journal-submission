@@ -10,14 +10,25 @@ title:     EMail System
 40 products.
 
 Click [here][cnfEmail] to download the feature model in conjunctive normal form (CNF).
+Click [here][bhvEmail] to download the behavioral model.
 
 ---
 
-_Last update: January 15th., 2016._
+## Evolutions of feature and behavioral models of Email system.
 
+|:-:|:-:|:-:|
+|**Evol.**|**Feature<br>model**|**Behavioral<br>models**|
+
+
+{% for ev in site.data.emailEvolutionsData %}
+| {{ev.evolution}} | <a href="{{ev.fmImage}}">(PNG)</a> <a href="{{ev.cnfFile}}">(CNF)</a> <a href="{{ev.xmlFmFile}}">(XML)</a> | <a href="{{ev.behavioralFile}}">(XML)</a>
+{% endfor %}
+---
+_Last update: March 21th., 2017._
 
 [fmEmail]:  ../../assets/fmEmail.png
 [cnfEmail]: CNF_email.txt
+[bhvEmail]: uml_email.tar.gz
 
 
 
