@@ -7,7 +7,7 @@ layout: default
 
 ## Time required
 
-![analysis_time]({{site.baseurl}}/assets/minepump-mean-analysis_time-configurations_ascending-logarithmic-ALL.png)
+![analysis_time]({{site.baseurl}}/assets/logminepumpTime.png)
 
 | Minepump evolutions        |         0 |          1 |          2 |          3 |          4 |           5 |           6 |           7 |          8 |         9 |
 |Configuration space's order |      10^2 |       10^2 |       10^2 |       10^3 |       10^3 |       10^3  |        10^3 |        10^4 |       10^4 |      10^4 |
@@ -34,7 +34,7 @@ layout: default
 
 ## Space required
 
-![analysis_space]({{site.baseurl}}/assets/minepump-mean-memory-configurations_ascending-ALL.png)
+![analysis_space]({{site.baseurl}}/assets/minepumpSpace.png)
 
 | Minepump evolutions        |       0  |       1  |       2  |       3  |       4  |       5  |       6  |       7  |       8  |       9  |
 |Configuration space's order |     10^2 |     10^2 |     10^2 |     10^3 |     10^3 |     10^3 |     10^3 |     10^4 |     10^4 |     10^4 |
@@ -56,7 +56,7 @@ layout: default
 
 
 ---
-*Last update: february 1st. 2105.*
+*Last update: March 22th., 2017.*
 
 
 
