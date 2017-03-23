@@ -4,20 +4,34 @@ title:     TankWar System
 ---
 # TankWar feature model
 
+## Original feature and behavioral models
+
 ![tankwar feature model][fmTankWar]
 
 144 features.  
 4.21\*10E18 products.
 
 Click [here][cnfTankWar] to download the feature model in conjunctive normal form (CNF).
+Click [here][bhvTankWar] to download the behavioral model.
 
 ---
 
-_Last update: January 15th., 2016._
+## Evolutions of feature and behavioral models of BSN-SPL.
+
+|:-:|:-:|:-:|
+|**Evol.**|**Feature<br>model**|**Behavioral<br>models**|
+
+
+{% for ev in site.data.tankwarEvolutionsData %}
+| {{ev.evolution}} | <a href="{{ev.fmImage}}">(PNG)</a> <a href="{{ev.cnfFile}}">(CNF)</a> <a href="{{ev.xmlFmFile}}">(XML)</a> | <a href="{{ev.behavioralFile}}">(XML)</a>
+{% endfor %}
+---
+_Last update: March 23th., 2017._
 
 
 [fmTankWar]:  ../../assets/fmTankWar.png
 [cnfTankWar]: CNF_tankwar.txt
+[bhvTankWar]: uml_tankwar.tar.gz 
 
 
 
