@@ -165,26 +165,26 @@ analysis takes place for summarizing the analysis' results, applying the
 suitable statistical tests and outputs its results by graphs and a report. Such
 resuts are grouped by software product lines and show how each analysis strategy
 demands time and space as the software product line evolves. All results of
-statistical analysis are packaged at the file `results.tar.bz` inside the
+statistical analysis are packaged at the file `results.tar.gz` inside the
 `reana-evaluation` folder. 
 
-In order to view its content it is necessary copy `results.tar.bz` file to the
+In order to view its content it is necessary copy `results.tar.gz` file to the
 host machine and extract its content. The file transfer from the experiment
 container to the host machine is accomplished by the instruction shown below. In
 a host's terminal type the following instruction, replacing `[name]` by the
 container name: 
 
 {% highlight shell %}
-docker cp [name]:/reana-evaluation/results.tar.bz .
+docker cp [name]:/reana-evaluation/results.tar.gz .
 {% endhighlight %}
 
 _Example_: considering out container example, the command line for copying the
 results to the host machine would be:
 {% highlight shell%}
-docker cp scalabilityAnalysis:/reana-evaluation/results.tar.bz .
+docker cp scalabilityAnalysis:/reana-evaluation/results.tar.gz .
 {% endhighlight %}
 
-After the file transfer finishes, the file `results.tar.bz` will be available at
+After the file transfer finishes, the file `results.tar.gz` will be available at
 your working directory. With the extracting tool of your preference, you must
 open and extract the file. The results will for each software product line will
 be available in its own folder. 
