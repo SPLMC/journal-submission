@@ -310,7 +310,7 @@ parameter so it answers in a practical time.
 [virtual-box-download]:     https://www.virtualbox.org/wiki/Downloads
 [virtual-box-installation]: https://www.virtualbox.org/manual/ch02.html
 [submission-github]:        https://github.com/andrelanna/sosym-submission
-[submission-image]:         https://link.to.a.file
+[submission-image]:         https://github.com/SPLMC/scalabilityAnalysis/raw/master/assets/replicationEnvironment.tar.bz
 
 
 
@@ -318,7 +318,8 @@ parameter so it answers in a practical time.
 
 
 
-
+---
+Last update: May 31th., 2017.
 
 
 
